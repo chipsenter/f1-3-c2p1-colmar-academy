@@ -1,0 +1,570 @@
+/*Universal Styles*/
+
+html {
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+body {
+	margin: 0;
+}
+
+/* Header */
+
+header {
+	width: 100%;
+	background-color: white;
+	align-items: center;
+	height: 4rem;
+	display: flex;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	flex-grow: 1;
+	padding-left: 1.5rem;
+}
+
+/* Header */
+
+header .desktop {
+	padding-right: 0.5rem;
+	align-items: center;
+	display: flex;
+}
+header a:hover {
+	color: #d61010b;
+	transition: color 200ms ease 120ms;
+	font-weight: bold;
+}
+
+.desktop span {
+	padding-right: 1rem;
+}
+
+header a {
+	font-family: "TruenoLight";
+	color: #4a4a4a;
+}
+a:hover {
+	color: #d61010;
+	transition: color 175ms ease 200ms;
+}
+
+a {
+	text-decoration: none;
+	color: #4a90e2;
+
+}
+
+header .mobile {
+	display: none;
+}
+
+@media only screen and (max-width: 460px) {
+	header .desktop {
+		display: none;
+	}
+
+	header .logo {
+		display: none;
+	}
+
+	header .mobile {
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+		align-items: center;
+	}
+
+	.mobile span {
+		padding: 0;
+	}
+}
+
+/* Start Here */
+
+#start-here {
+	background-color: #d8d8d8;
+	height: auto;
+	width: 100%;
+	display: flex;
+}
+
+#start-here img {
+	width: 65%;
+	height: 65%;
+	margin-right: 2.5rem;
+	padding: 2rem 0 2rem 1.5rem;
+}
+
+#start-button {
+	margin: auto 0;
+}
+
+#start-button h1 {
+	font-family: 'TruenoBold';
+	font-size: 3rem;
+	font-weight: 700;
+	margin: 2rem 0;
+	color: #4a4a4a;
+}
+
+#start-button h3 {
+	font-family: "TruenoRegular";
+	font-size: 1.5rem;
+	margin: 2rem 0;
+	color: #4a4a4a;
+}
+.button:hover {
+	transition: color 250ms linear 150ms;
+	background-color: #d61010;
+	color: black;
+}
+
+.button {
+	text-align: center;
+	background-color: #4a4a4a;
+	padding: 8px 0;
+	color: white;
+
+}
+
+@media only screen and (max-width: 460px) {
+	#start-here {
+		flex-direction: column;
+	}
+
+	#start-here img {
+		height: 180px;
+		width: auto;
+		padding: 0;
+		margin: 0;
+	}
+
+	#start-button {
+		background-color: #dbdbdb;
+	}
+
+	#start-button h1 {
+		display: block;
+		font-size: 2rem;
+		margin: 2rem 2rem 2rem 1rem;
+	}
+	#start-button h3 {
+		font-size: 1.25rem;
+		margin: 0 2rem 2rem 1rem;
+	}
+	.button {
+		margin: 0 1rem 2rem 1rem;
+		background-color: #9b9b9b;
+	}
+}
+
+/* Features */
+
+#features {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	background-color: #f3f5f5;
+}
+
+#practice {
+	display: inline-flex;
+	flex-direction: column;
+	width: calc(100% - 453px);
+	flex-grow: 1;
+}
+
+#campus {
+	display: inline-flex;
+	width: 421px;
+	flex-direction: column;
+	border-left: 1px solid #d8d8d8;
+	padding-top: 1rem;
+	flex-grow: 0;
+
+}
+
+#info-pic img {
+	width: calc(100% - 79px);
+	height: 100%;
+	padding: 2rem 0 2rem 1.5rem;
+}
+
+.campus-info {
+	display: flex;
+	flex-direction: row;
+	flex-shrink: 1;
+	border-bottom: 1px solid #d8d8d8;
+
+}
+
+.campus-info img {
+	width: 35%;
+	height: 35%;
+	padding: 1rem;
+	border-radius: 1px;
+}
+
+#info {
+	margin-top: 0;
+	padding-top: 0;
+	padding-left: 1.5rem;
+}
+
+#info h4 {
+	font-family: "TruenoLight";
+	color: #767676;
+	font-weight: 100;
+}
+
+#info h6 {
+	font-family: "TruenoLight";
+	font-weight: 200;
+}
+
+.description {
+	margin: auto 0;
+}
+
+.description h4 {
+	font-family: "TruenoBold";
+	color: #4a4a4a;
+}
+
+.description h5 {
+	font-weight: 100;
+}
+
+.description h4, .description h5 {
+	margin-bottom: 8px;
+	margin-top: 0px;
+	color: #4a4a4a
+}
+
+.description h6 {
+	margin: 0;
+	color: #4a90e2;
+}
+
+.campus-info:last-child {
+	background-color: #d8d8d8;
+
+}
+
+#practice h2 {
+	font-family: 'TruenoBold';
+	font-weight: 700;
+	font-size: 2.5rem;
+	margin-top: 0;
+	margin-bottom: 1.5rem;
+	color: #4a4a4a;
+}
+
+#practice h4 {
+	margin-top: 0;
+	margin-bottom: 1.5rem;
+}
+
+#practice h6 {
+	margin-top: 0;
+	margin-bottom: 2rem;
+}
+
+.campus-info .mobile{
+	display: none;
+}
+
+@media only screen and (max-width: 460px) {
+	#practice {
+		display: none;
+	}
+
+	.campus-info {
+		flex-direction: column;
+		border-bottom: 0px;
+		width: 100%;
+	}
+
+	#campus {
+		width: 100%;
+		padding-top: 0;
+		padding-bottom: 2rem;
+	}
+
+	.campus-info img {
+		width : calc(100% - 2rem);
+		height: auto;
+	}
+
+	.campus-info .desktop {
+		display: none;
+	}
+
+	.campus-info .mobile {
+		display: block;
+	}
+
+	.description {
+		margin-left: 2rem;
+		margin-bottom: 0;
+	}
+
+	.campus-info:last-child {
+	background-color: #f3f5f5;
+	}
+
+	#features {
+		border-bottom: 1px solid #d8d8d8;
+	}
+
+}
+
+/* Start Learning */
+
+#learning {
+	margin: auto;
+	width: 100%;
+	background-color: #eaebec;
+}
+
+#learning h2 {
+	font-family: 'TruenoBold';
+	font-weight: 700;
+	text-align: center;
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+	margin: 0px;
+	color: #4a4a4a;
+}
+
+.courses {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+}
+
+.course-item {
+	margin: 1rem 1rem 0 1rem;
+	width: calc(100% * (1/4));
+	background-color: white;
+}
+
+.course-item img {
+	width: 100%;
+}
+
+.course-item h4,
+.course-item h5,
+.course-item h6 {
+	margin-left: 1rem;
+}
+
+.course-item h4 {
+	font-family: "TruenoBold";
+	margin-top: 1rem;
+	margin-bottom: 0px;
+	color: #4a4a4a;
+	font-size: 1.25rem;
+}
+
+.course-item h5 {
+	font-family: "TruenoLight";
+	margin-top: 0.5rem;
+	margin-bottom: 0;
+	font-weight: 100;
+	color: #767676;
+}
+
+.course-item h6 {
+	font-family: "TruenoLight";
+	margin-top: 0.5rem;
+	margin-bottom: 1.5rem;
+	margin-right: 1.5rem;
+	font-weight: 100;
+	font-size: 0.87rem;
+	color: #767676;
+}
+
+@media only screen and (max-width: 460px) {
+	.courses {
+		flex-direction: column;
+		border-bottom: 1px solid #d8d8d8;
+	}
+
+	.course-item {
+		width: calc(100% - 32px);
+		background-color: #d8d8d8;
+		margin-top: 0.5rem;
+	}
+
+	#learning {
+		background-color: #f5f4f5;
+	}
+
+	#learning h2 {
+		padding-bottom: 0.5rem;
+	}
+
+	.course-item .desktop {
+		display: none;
+	}
+
+	.course-item h4{
+		margin: 1rem;
+	}
+
+	.course-item h5,
+	.course-item h6 {
+		display: none;
+	}
+
+}
+
+/* Thesis */
+
+#thesis {
+	border-bottom: 1px solid #d8d8d8;
+}
+
+#title h2 {
+	font-family: "TruenoBold";
+	color: #4a4a4a;
+	text-align: center;
+}
+
+#container {
+	display: flex;
+}
+
+#examples {
+	display: inline-flex;
+	flex-direction: column;
+}
+
+#exhibit {
+	display: inline-flex;
+	flex-direction: column;
+	width: calc(100% - 423px);
+}
+
+#exhibit-info {
+	margin-left: 1.5rem;
+}
+
+#exhibit-info h4 {
+	color: #4a4a4a;
+	font-weight: 600;
+	margin: 0;
+}
+
+#exhibit-info h5 {
+	color: #767676;
+	font-weight: 100;
+	margin-top: 8px;
+	margin-bottom: 32px;
+	font-size: 1rem;
+}
+
+.example {
+	display: flex;
+	width: 423px;
+	height: 168px;
+}
+
+.example:first-child {
+	background-color: #d8d8d8;
+}
+
+video {
+	padding: 0 1.5rem 1.5rem 1.5rem;
+	width: calc(100% - 48px);
+  height: auto;
+}
+
+.example-pic img {
+	height: 136px;
+	width: 136px;
+	padding: 1rem;
+}
+
+.example-description {
+	margin: auto 0;
+}
+
+.example-description h4 {
+	font-family: "TruenoBold";
+	margin: 0 0 8px 0;
+	color: #4a4a4a;
+	font-weight: 600;
+}
+
+.example-description h5 {
+	font-family: "TruenoLight";
+	margin: 0;
+	color: #4a4a4a;
+	font-weight: 100;
+}
+
+@media only screen and (max-width: 460px) {
+	#thesis {
+		border-bottom: 0;
+	}
+
+	#examples {
+		display: none;
+	}
+
+	#exhibit-info {
+		display: none;
+	}
+
+	#container {
+		flex-direction: column;
+	}
+
+	#exhibit {
+		width: 100%;
+	}
+
+	video {
+		width: 100%;
+		height: auto;
+		padding: 0 0 1.5rem 0;
+	}
+}
+
+
+/* Footer */
+
+#cp {
+	margin: 1rem 0 3rem 1.5rem;
+	display: inline;
+	float: left;
+	color: #767676;
+  font-weight: 100;
+}
+
+#terms {
+	margin: 1rem 1.5rem 3rem 0rem;
+	display: inline;
+	float: right;
+	color: #767676;
+  font-weight: 100;
+}
+
+@media only screen and (max-width: 460px) {
+	#cp {
+		margin-left: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	#terms {
+		display: none;
+	}
+}
+/* Johan Fredrik Lindstrom🤡 */
